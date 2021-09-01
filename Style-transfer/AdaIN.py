@@ -15,6 +15,7 @@ class AdaIN_v1:
         self.model_version: str = '1.0.0'
         self.content_image_path: str = kwargs['content_image']
         self.style_image_path: str = kwargs['style_image']
+        self.alpha: float = kwargs['alpha']
 
         self.vgg_encoder: torch.nn = self.build_encoder_model()
         self.decoder: torch.nn = self.build_decoder_model()
@@ -46,7 +47,7 @@ class AdaIN_v1:
         content = content.to(self.device).unsqueeze(0)
 
         with torch.no_grad():
-            output = self.adain_style_transfer(content, style, alpha=1.0)
+            output = self.adain_style_transfer(content=content, style=style)
         output = output.cpu()
 
         output_image_path: str = './results/output.png'
@@ -55,12 +56,12 @@ class AdaIN_v1:
         output_image = Image.open(output_image_path)
         output_image.show()
 
-    def adain_style_transfer(self, content, style, alpha=1.0):
-        assert (0.0 <= alpha <= 1.0)
+    def adain_style_transfer(self, content, style):
+        assert (0.0 <= self.alpha <= 1.0)
         content_feature = self.vgg_encoder(content)
         style_feature = self.vgg_encoder(style)
         feature = self.adaptive_instance_normalization(content_feature, style_feature)
-        feature = feature * alpha + content_feature * (1 - alpha)
+        feature = feature * self.alpha + content_feature * (1 - self.alpha)
         return self.decoder(feature)
 
     @staticmethod
@@ -185,8 +186,10 @@ class AdaIN_v1:
 
 
 if __name__ == '__main__':
-    content_image_path: str = './images/game_woman.jpg'
-    style_image_path: str = './images/princess.jpg'
+    content_image_path: str = './images/jennie.jpg'
+    style_image_path: str = './images/claude-monet.jpg'
+    alpha: float = 0.7
+    assert (0.0 <= alpha <= 1.0)
 
-    adain = AdaIN_v1(content_image=content_image_path, style_image=style_image_path)
+    adain = AdaIN_v1(content_image=content_image_path, style_image=style_image_path, alpha=alpha)
     adain.style_transfer()
