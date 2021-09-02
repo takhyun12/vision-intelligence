@@ -1,154 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="README.md 수정">
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/StarGAN_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/data_loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/references/StarGAN_v1_colab.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v1/solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/starGAN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/StarGAN_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/assets/afhq_latent_result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/assets/afhq_reference_result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/assets/celeba_latent_result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/assets/celeba_reference_result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/assets/teaser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/1_pixabay_cat_000535.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/2_pixabay_cat_001479.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/3_pixabay_cat_000730.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/1_pixabay_dog_000121.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/2_pixabay_dog_000799.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/3_pixabay_dog_000357.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/1_flickr_wild_002933.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/2_pixabay_wild_000637.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/3_flickr_wild_003355.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/1_flickr_cat_000253.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/2_flickr_wild_000814.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/3_flickr_dog_000094.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/4_pixabay_cat_003610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/5_pixabay_dog_000321.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/6_pixabay_dog_000322.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/1_045687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/2_058865.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/3_084913.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/1_012712.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/2_137590.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/3_191084.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/1_059839.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/2_196930.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/3_172559.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/4_018765.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/5_053372.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000044.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000074.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000016.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000025.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000051.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000052.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/networks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/starGAN/v2/utils.py" afterDir="false" />
+    <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="저장구조 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/.idea/starGAN.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/StarGAN_v1_colab.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/StarGAN_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/assets/afhq_latent_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/assets/afhq_reference_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/assets/celeba_latent_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/assets/celeba_reference_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/assets/teaser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/cat/1_pixabay_cat_000535.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/cat/2_pixabay_cat_001479.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/cat/3_pixabay_cat_000730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/dog/1_pixabay_dog_000121.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/dog/2_pixabay_dog_000799.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/dog/3_pixabay_dog_000357.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/wild/1_flickr_wild_002933.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/wild/2_pixabay_wild_000637.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/ref_imgs/wild/3_flickr_wild_003355.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/1_flickr_cat_000253.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/2_flickr_wild_000814.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/3_flickr_dog_000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/4_pixabay_cat_003610.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/5_pixabay_dog_000321.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/test/src_imgs/6_pixabay_dog_000322.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/cat/flickr_cat_000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/cat/flickr_cat_000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/cat/flickr_cat_000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/cat/flickr_cat_000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/cat/flickr_cat_000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/dog/flickr_dog_000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/dog/flickr_dog_000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/dog/flickr_dog_000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/dog/flickr_dog_000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/dog/flickr_dog_000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/wild/flickr_wild_000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/wild/flickr_wild_000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/wild/flickr_wild_000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/wild/flickr_wild_000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/afhq/train/wild/flickr_wild_000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/female/1_045687.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/female/2_058865.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/female/3_084913.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/male/1_012712.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/male/2_137590.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/ref_imgs/male/3_191084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/src_imgs/1_059839.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/src_imgs/2_196930.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/src_imgs/3_172559.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/src_imgs/4_018765.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/test/src_imgs/5_053372.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/female/000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/female/000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/female/000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/female/000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/female/000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/male/000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/male/000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/male/000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/male/000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/dataset/celeba_hq_gender/train/male/000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/networks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/ops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style-transfer/AdaIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Style-transfer/AdaIN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style-transfer/results/output.png" beforeDir="false" afterPath="$PROJECT_DIR$/Style-transfer/results/output.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +27,9 @@
       </map>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -194,6 +51,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -316,6 +174,8 @@
       <workItem from="1630380110337" duration="193000" />
       <workItem from="1630380312029" duration="698000" />
       <workItem from="1630381029194" duration="10126000" />
+      <workItem from="1630491913369" duration="197000" />
+      <workItem from="1630545857008" duration="1324000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore 추가">
       <created>1630380608211</created>
@@ -352,7 +212,49 @@
       <option name="project" value="LOCAL" />
       <updated>1630381361482</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="README.md 수정">
+      <created>1630491933820</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1630491933820</updated>
+    </task>
+    <task id="LOCAL-00007" summary="저장구조 수정">
+      <created>1630545897876</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1630545897876</updated>
+    </task>
+    <task id="LOCAL-00008" summary="저장구조 수정">
+      <created>1630546090120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1630546090120</updated>
+    </task>
+    <task id="LOCAL-00009" summary="저장구조 수정">
+      <created>1630546267056</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1630546267056</updated>
+    </task>
+    <task id="LOCAL-00010" summary="저장구조 수정">
+      <created>1630546495391</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1630546495391</updated>
+    </task>
+    <task id="LOCAL-00011" summary="저장구조 수정">
+      <created>1630546820247</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1630546820247</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +278,8 @@
     <MESSAGE value="오타 수정 및 readme 구조 세분화" />
     <MESSAGE value="누락된 파일들 다시 업로드" />
     <MESSAGE value="README.md 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정" />
+    <MESSAGE value="저장구조 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="저장구조 수정" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__1_.coverage" NAME="AdaIN (1) Coverage Results" MODIFIED="1630379501060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-tranfer" />
