@@ -4,7 +4,6 @@ from solver import Solver
 from data_loader import get_loader
 from torch.backends import cudnn
 
-
 def str2bool(v):
     return v.lower() in ('true')
 
@@ -34,7 +33,6 @@ def main(config):
         rafd_loader = get_loader(config.rafd_image_dir, None, None,
                                  config.rafd_crop_size, config.image_size, config.batch_size,
                                  'RaFD', config.mode, config.num_workers)
-    
 
     # Solver for training and testing StarGAN.
     solver = Solver(celeba_loader, rafd_loader, config)

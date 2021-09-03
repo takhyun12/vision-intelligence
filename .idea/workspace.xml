@@ -3,6 +3,76 @@
   <component name="ChangeListManager">
     <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="저장구조 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v1/StarGAN_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/starGAN/v1/StarGAN_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/starGAN/v1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/.idea/starGAN.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/starGAN/v2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/StarGAN_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/assets/afhq_latent_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/assets/afhq_reference_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/assets/celeba_latent_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/assets/celeba_reference_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/assets/teaser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/1_pixabay_cat_000535.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/2_pixabay_cat_001479.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/cat/3_pixabay_cat_000730.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/1_pixabay_dog_000121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/2_pixabay_dog_000799.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/dog/3_pixabay_dog_000357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/1_flickr_wild_002933.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/2_pixabay_wild_000637.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/ref_imgs/wild/3_flickr_wild_003355.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/1_flickr_cat_000253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/2_flickr_wild_000814.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/3_flickr_dog_000094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/4_pixabay_cat_003610.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/5_pixabay_dog_000321.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/test/src_imgs/6_pixabay_dog_000322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/cat/flickr_cat_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/dog/flickr_dog_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/afhq/train/wild/flickr_wild_000007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/1_045687.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/2_058865.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/female/3_084913.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/1_012712.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/2_137590.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/ref_imgs/male/3_191084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/1_059839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/2_196930.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/3_172559.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/4_018765.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/test/src_imgs/5_053372.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/female/000074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/dataset/celeba_hq_gender/train/male/000052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/starGAN/v2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/networks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +102,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1xFH5YCApx3RawSRkdibZKUZ5yo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,7 +123,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -60,7 +131,7 @@
       <recent name="D:\Project\vision-intelligence\Style-tranfer\references" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.StarGAN_v1">
+  <component name="RunManager" selected="Python.AdaIN (2)">
     <configuration name="AdaIN (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="vision-intelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,10 +220,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="checkpoint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="vision-intelligence" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generator/starGAN/v2/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generator/starGAN/v2/core/checkpoint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.StarGAN_v1" />
         <item itemvalue="Python.AdaIN (2)" />
+        <item itemvalue="Python.StarGAN_v1" />
+        <item itemvalue="Python.checkpoint" />
         <item itemvalue="Python.AdaIN (1)" />
         <item itemvalue="Python.AdaIN" />
       </list>
@@ -176,6 +270,9 @@
       <workItem from="1630381029194" duration="10126000" />
       <workItem from="1630491913369" duration="197000" />
       <workItem from="1630545857008" duration="1324000" />
+      <workItem from="1630547199481" duration="9336000" />
+      <workItem from="1630591856490" duration="331000" />
+      <workItem from="1630630804756" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore 추가">
       <created>1630380608211</created>
@@ -254,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630546820247</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="저장구조 수정">
+      <created>1630547478947</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1630547478947</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +388,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__1_.coverage" NAME="AdaIN (1) Coverage Results" MODIFIED="1630379501060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-tranfer" />
     <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN.coverage" NAME="AdaIN Coverage Results" MODIFIED="1630036225882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style tranfer" />
-    <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__2_.coverage" NAME="AdaIN (2) Coverage Results" MODIFIED="1630402852997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-transfer" />
-    <SUITE FILE_PATH="coverage/vision_intelligence$StarGAN_v1.coverage" NAME="StarGAN_v1 Coverage Results" MODIFIED="1630403231553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v1" />
+    <SUITE FILE_PATH="coverage/vision_intelligence$checkpoint.coverage" NAME="checkpoint Coverage Results" MODIFIED="1630562663538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v2/core" />
+    <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__2_.coverage" NAME="AdaIN (2) Coverage Results" MODIFIED="1630592012208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-transfer" />
+    <SUITE FILE_PATH="coverage/vision_intelligence$StarGAN_v1.coverage" NAME="StarGAN_v1 Coverage Results" MODIFIED="1630591912998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v1" />
   </component>
 </project>
