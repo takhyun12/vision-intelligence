@@ -64,8 +64,9 @@ class ResBlk(nn.Module):
         return x / math.sqrt(2)  # unit variance
 
 
-from .modulated_convolution import Conv2DMod, RGBBlock    
-    
+from .modulated_convolution import Conv2DMod, RGBBlock
+
+
 class GenResBlk(nn.Module):
     def __init__(self, dim_in, dim_out, style_dim=64, fade_num_channels=4, fade_num_hidden=32,
                  actv=nn.LeakyReLU(0.2), upsample=False):
@@ -97,6 +98,7 @@ class GenResBlk(nn.Module):
         rgb = self.toRGB(x, rgb, s)
         return x, rgb
 
+
 class HighPass(nn.Module):
     def __init__(self, w_hpf, device):
         super(HighPass, self).__init__()
@@ -113,7 +115,7 @@ class HighPass(nn.Module):
 class Generator(nn.Module):
     def __init__(self, img_size=256, style_dim=64, max_conv_dim=512, w_hpf=1):
         super().__init__()
-        dim_in = 2**14 // img_size
+        dim_in = 2 ** 14 // img_size
         self.img_size = img_size
         self.from_rgb = nn.Conv2d(3, dim_in, 3, 1, 1)
         self.encode = nn.ModuleList()
@@ -128,7 +130,7 @@ class Generator(nn.Module):
         if w_hpf > 0:
             repeat_num += 1
         for _ in range(repeat_num):
-            dim_out = min(dim_in*2, max_conv_dim)
+            dim_out = min(dim_in * 2, max_conv_dim)
             self.encode.append(
                 ResBlk(dim_in, dim_out, normalize=True, downsample=True))
             self.decode.insert(
@@ -199,13 +201,13 @@ class MappingNetwork(nn.Module):
 class StyleEncoder(nn.Module):
     def __init__(self, img_size=256, style_dim=64, num_domains=2, max_conv_dim=512):
         super().__init__()
-        dim_in = 2**14 // img_size
+        dim_in = 2 ** 14 // img_size
         blocks = []
         blocks += [nn.Conv2d(3, dim_in, 3, 1, 1)]
 
         repeat_num = int(np.log2(img_size)) - 2
         for _ in range(repeat_num):
-            dim_out = min(dim_in*2, max_conv_dim)
+            dim_out = min(dim_in * 2, max_conv_dim)
             blocks += [ResBlk(dim_in, dim_out, downsample=True)]
             dim_in = dim_out
 
@@ -229,17 +231,17 @@ class StyleEncoder(nn.Module):
         s = out[idx, y]  # (batch, style_dim)
         return s
 
-    
+
 class Discriminator(nn.Module):
     def __init__(self, img_size=256, num_domains=2, max_conv_dim=512):
         super().__init__()
-        dim_in = 2**14 // img_size
+        dim_in = 2 ** 14 // img_size
         blocks = []
         blocks += [nn.Conv2d(3, dim_in, 3, 1, 1)]
 
         repeat_num = int(np.log2(img_size)) - 2
         for _ in range(repeat_num):
-            dim_out = min(dim_in*2, max_conv_dim)
+            dim_out = min(dim_in * 2, max_conv_dim)
             blocks += [ResBlk(dim_in, dim_out, downsample=True)]
             dim_in = dim_out
 
