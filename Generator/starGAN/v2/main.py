@@ -1,26 +1,15 @@
-"""
-StarGAN v2
-Copyright (c) 2020-present NAVER Corp.
-
-This work is licensed under the Creative Commons Attribution-NonCommercial
-4.0 International License. To view a copy of this license, visit
-http://creativecommons.org/licenses/by-nc/4.0/ or send a letter to
-Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-"""
-
 import os
 import argparse
-
 from munch import Munch
 from torch.backends import cudnn
 import torch
-
 from core.data_loader import get_train_loader
 from core.data_loader import get_test_loader
 from core.solver import Solver
-
 import warnings
+
 warnings.filterwarnings("ignore")
+
 
 def str2bool(v):
     return v.lower() in ('true')
