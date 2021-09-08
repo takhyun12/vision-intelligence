@@ -188,7 +188,7 @@ class AdaIN_v1:
 if __name__ == '__main__':
     content_image_path: str = './images/jennie.jpg'
     style_image_path: str = './images/claude-monet.jpg'
-    alpha: float = 0.7
+    alpha: float = 1.0
     assert (0.0 <= alpha <= 1.0)
 
     adain = AdaIN_v1(content_image=content_image_path, style_image=style_image_path, alpha=alpha)
