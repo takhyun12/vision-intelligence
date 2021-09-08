@@ -18,8 +18,16 @@ $ pip install {}
 
 ## List of Contents
 
+### Style transfer
+
 * [AdaIN Style transfer](https://github.com/takhyun12/vision-intelligence/tree/main/Style-transfer)
 
 ![adain](https://user-images.githubusercontent.com/41291493/132440767-673332f9-6ec9-4fb9-aca6-236e4df64198.png)
+
+### Image Generator
+
+* [starGAN_v1](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v1)
+  
+* [starGAN_v2](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v2)
 
 ## TODO / Known Issues:
