@@ -23,7 +23,7 @@ $ pip install {}
 
 * [vanillaGAN](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/vanillaGAN)
   
-![vanillaGAN](https://user-images.githubusercontent.com/41291493/132628090-83afa74f-ad04-4394-9b41-7be01eebd98e.png)
+![vanillaGAN](https://user-images.githubusercontent.com/41291493/132628264-acc8ecbd-e6dd-4fe7-8847-9beda2171c09.png)
 
 * [starGAN_v1](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v1)
   
