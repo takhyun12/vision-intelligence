@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="read me 수정">
+      <change afterPath="$PROJECT_DIR$/Generator/vanillaGAN/references/GAN_for_MNIST_colab.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator/vanillaGAN/vanillaGAN_v1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style-transfer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Style-transfer/README.md" afterDir="false" />
@@ -63,29 +65,7 @@
       <recent name="D:\Project\vision-intelligence\Style-tranfer\references" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AdaIN (2)">
-    <configuration name="AdaIN (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="vision-intelligence" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Style-tranfer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Style-tranfer/AdaIN.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.vanillaGAN_v1">
     <configuration name="AdaIN (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="vision-intelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,13 +154,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="vanillaGAN_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="vision-intelligence" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generator/vanillaGAN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generator/vanillaGAN/vanillaGAN_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.vanillaGAN_v1" />
         <item itemvalue="Python.AdaIN (2)" />
         <item itemvalue="Python.starGAN_v2" />
         <item itemvalue="Python.starGAN_v1" />
         <item itemvalue="Python.checkpoint" />
-        <item itemvalue="Python.AdaIN (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +214,8 @@
       <workItem from="1630891879887" duration="4538000" />
       <workItem from="1630977317090" duration="5228000" />
       <workItem from="1631014363668" duration="58000" />
-      <workItem from="1631066254764" duration="2662000" />
+      <workItem from="1631066254764" duration="3391000" />
+      <workItem from="1631150030607" duration="5329000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore 추가">
       <created>1630380608211</created>
@@ -347,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631071168224</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="read me 수정">
+      <created>1631071402366</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631071402366</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +395,7 @@
     <SUITE FILE_PATH="coverage/vision_intelligence$checkpoint.coverage" NAME="checkpoint Coverage Results" MODIFIED="1630562663538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v2/core" />
     <SUITE FILE_PATH="coverage/vision_intelligence$starGAN_v2.coverage" NAME="starGAN_v2 Coverage Results" MODIFIED="1631069309542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v2" />
     <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__2_.coverage" NAME="AdaIN (2) Coverage Results" MODIFIED="1631070555175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-transfer" />
+    <SUITE FILE_PATH="coverage/vision_intelligence$vanillaGAN_v1.coverage" NAME="vanillaGAN_v1 Coverage Results" MODIFIED="1631156146222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/vanillaGAN" />
     <SUITE FILE_PATH="coverage/vision_intelligence$StarGAN_v1.coverage" NAME="StarGAN_v1 Coverage Results" MODIFIED="1630591912998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generator/starGAN/v1" />
   </component>
 </project>

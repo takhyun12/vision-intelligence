@@ -5,9 +5,9 @@
 This repository is still under construction.
 
 ## References
-> [Github-AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+> [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 
-> [Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
+> [(Paper) Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
 
 ## List of Contents
 

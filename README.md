@@ -4,11 +4,6 @@
 
 This repository is still under construction.
 
-## References
-> [Github-AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
-
-> [Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
-
 ## Install:
 To install the current release:
 
@@ -26,8 +21,18 @@ $ pip install {}
 
 ### Image Generator
 
+* [vanillaGAN](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/vanillaGAN)
+  
+![vanillaGAN](https://user-images.githubusercontent.com/41291493/132628090-83afa74f-ad04-4394-9b41-7be01eebd98e.png)
+
 * [starGAN_v1](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v1)
   
 * [starGAN_v2](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v2)
+
+## References
+> [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+
+> [(Paper) Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
+
 
 ## TODO / Known Issues:
