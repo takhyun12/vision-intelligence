@@ -27,6 +27,8 @@ $ pip install {}
 
 * [starGAN_v1](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v1)
   
+![starGAN_v1](https://user-images.githubusercontent.com/41291493/132783716-9a0c0c8d-cd45-485e-97e6-302aed760abe.png)
+
 * [starGAN_v2](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v2)
 
 ## References

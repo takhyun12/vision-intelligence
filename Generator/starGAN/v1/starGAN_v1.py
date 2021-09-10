@@ -166,6 +166,7 @@ if __name__ == '__main__':
 
     # 원본 이미지 출력
     plt.imshow(stargan.denormalized(image.data.cpu()).squeeze(0).permute(1, 2, 0))
+    plt.show()
 
     # [Black_Hair, Blond_Hair, Brown_Hair, Male, Young]
     c_trg = [[0, 1, 0, 0, 1]]
