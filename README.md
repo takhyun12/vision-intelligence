@@ -31,10 +31,13 @@ $ pip install {}
 
 * [starGAN_v2](https://github.com/takhyun12/vision-intelligence/tree/main/Generator/starGAN/v2)
 
+![starGAN_v2](https://user-images.githubusercontent.com/41291493/132784664-6ad53dae-4d9b-4cd5-944c-35971f162a28.png)
+
 ## References
 > [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 
 > [(Paper) Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
 
+> [(Github) starGAN](https://github.com/yunjey/stargan)
 
-## TODO / Known Issues:
+> [(Github) starGAN_v2](https://github.com/clovaai/stargan-v2)

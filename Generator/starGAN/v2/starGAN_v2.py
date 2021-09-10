@@ -82,7 +82,7 @@ class StarGAN_v2:
 
 
 if __name__ == '__main__':
-    source_image_path: str = './images/flickr_wild_000004.jpg'
+    source_image_path: str = './images/jindo.jpg'
     reference_image_path: str = './images/flickr_cat_000008.jpg'
     pre_trained_model_path: str = './expr/checkpoints/000100_nets_ema.ckpt'
 
