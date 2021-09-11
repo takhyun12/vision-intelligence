@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="readme 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/starGAN/v2/starGAN_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/starGAN/v2/starGAN_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style-transfer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Style-transfer/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +213,8 @@
       <workItem from="1631014363668" duration="58000" />
       <workItem from="1631066254764" duration="3391000" />
       <workItem from="1631150030607" duration="6054000" />
-      <workItem from="1631235886184" duration="1578000" />
+      <workItem from="1631235886184" duration="5285000" />
+      <workItem from="1631318942116" duration="736000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore 추가">
       <created>1630380608211</created>
@@ -376,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631237069139</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="readme 수정">
+      <created>1631237942348</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631237942348</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
