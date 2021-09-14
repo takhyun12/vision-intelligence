@@ -2,15 +2,15 @@
 
 ![logo](data/compose.jpg)
 
-Experiments on replacing Adaptive Instance Normalization(AdaIN) layers in [__StarGAN V2__](https://github.com/clovaai/stargan-v2) model.
 
-The presented results was obtained in a 24 hours on a single Colab GPU.
+## pre-trained model
+[AFHQ weights](https://drive.google.com/file/d/1-1UERIVDdt50i0Rh9E--WD5HlBumZxf0/view?usp=sharing)
 
-For more information see [Modifying StarGAN V2 using Modulated Convolutions](https://v-hramchenko.medium.com/modifying-stargan-v2-using-modulated-convolutions-13dc5796cd6e).
+This weight file was obtained in a 72 hours on a Colab GPU and high-performance memory.
 
 ## Images generation
 For images generation:
-1. Unpack pretrained [weights](https://cloud.mail.ru/public/7fKF/oPW7FDLro) in repository root.
+1. Unpack pretrained [weights](https://drive.google.com/file/d/1-1UERIVDdt50i0Rh9E--WD5HlBumZxf0/view?usp=sharing) in repository root.
 2. Run generate_images.ipynb file.
 
 ## Training the model

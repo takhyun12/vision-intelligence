@@ -33,6 +33,8 @@ $ pip install {}
 
 ![starGAN_v2](https://user-images.githubusercontent.com/41291493/132784664-6ad53dae-4d9b-4cd5-944c-35971f162a28.png)
 
+* [styleCLIP]()
+
 ## References
 > [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 
