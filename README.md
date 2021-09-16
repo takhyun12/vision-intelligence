@@ -35,11 +35,15 @@ $ pip install {}
 
 * [styleCLIP]()
 
+* [styleGAN-webtoon(naver webtoon)]()
+
+* [styleGAN-toonify(disney)]()
+
 ## References
-> [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+* [(Github) AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 
-> [(Paper) Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
+* [(Paper) Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868)
 
-> [(Github) starGAN](https://github.com/yunjey/stargan)
+* [(Github) starGAN](https://github.com/yunjey/stargan)
 
-> [(Github) starGAN_v2](https://github.com/clovaai/stargan-v2)
+* [(Github) starGAN_v2](https://github.com/clovaai/stargan-v2)

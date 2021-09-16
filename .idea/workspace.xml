@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="다양한 연구결과들 추가" />
+    <list default="true" id="2740c95f-1eaa-488d-b8d2-5bf1317e0c1b" name="Default Changelist" comment="toonify 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,6 +220,7 @@
       <workItem from="1631600952905" duration="223000" />
       <workItem from="1631630130097" duration="288000" />
       <workItem from="1631681870488" duration="693000" />
+      <workItem from="1631797836197" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore 추가">
       <created>1630380608211</created>
@@ -424,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631681966213</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="toonify 추가">
+      <created>1631797939660</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797939660</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +468,8 @@
     <MESSAGE value="styleCLIP 추가" />
     <MESSAGE value="pre-trained model 추가" />
     <MESSAGE value="다양한 연구결과들 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="다양한 연구결과들 추가" />
+    <MESSAGE value="toonify 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="toonify 추가" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vision_intelligence$AdaIN__1_.coverage" NAME="AdaIN (1) Coverage Results" MODIFIED="1630379501060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Style-tranfer" />
