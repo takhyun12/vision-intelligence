@@ -1,6 +1,39 @@
 import streamlit as st
 from PIL import Image, ImageOps
 
+# configuration
+task_dict = {
+    "Face Alignment": {
+        "FFHQ-Alignment": {
+            "Public dataset": "location"
+        },
+        "PRNET": {
+            "Public dataset": "location"
+        },
+    },
+    "Style Transfer": {
+        "AdaIN": {
+            "VGG Encoder": "location"
+        },
+    },
+    "Face Generator": {
+        "starGAN_v1": {
+            "CelebA-HQ": "location"
+        },
+        "starGAN_v2": {
+            "CelebA-HQ": "location",
+            "AFHQ(Animal Faces-HQ)": "location",
+            "AFHQ_v2": "location"
+        },
+        "styleCLIP": {
+            "Public dataset": "location"
+        },
+        "styleGAN_v2": {
+            "Public dataset": "location"
+        },
+    }
+}
+
 MAGE_EMOJI_URL = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/mage_1f9d9.png"
 
 # browser header
@@ -29,8 +62,28 @@ for uploaded_file in uploaded_files:
     with col2:
         st.image(image)
 
+
 # sidebar
 with st.sidebar:
+    st.info(
+        "🎈 **NEW:** Add your own code template to this site! [Guide](https://github.com/jrieke/traingenerator#adding-new-templates)"
+    )
+
+    st.write("## Task")
+    task = st.selectbox(
+        "Which problem do you want to solve?", list(task_dict.keys())
+    )
+
+    st.write("## Model")
+    model = st.selectbox(
+        "Which model?", list(task_dict[task].keys())
+    )
+
+    st.write("## Dataset")
+    dataset = st.selectbox(
+        "Which data do you want to use?", list(task_dict[task][model].keys())
+    )
+
     st.header("Layout configuration")
     with st.form(key="grid_reset"):
         n_photos = st.slider("Number of images:", min_value=1, max_value=4, value=1)
@@ -40,5 +93,15 @@ with st.sidebar:
             st.success(n_photos)
             st.write("slider", n_photos, "checkbox", n_cols)
 
+    st.write("## Training")
+    gpu_check = st.checkbox('Use GPU if available')
+    if gpu_check:
+        st.info('Great!')
 
+    save_checkpoint = st.checkbox('Save model checkpoint each epoch')
+    if save_checkpoint:
+        st.info('Great!')
 
+    st.error(
+        "Found a bug? [Report it](https://github.com/jrieke/traingenerator/issues) 🐛"
+    )
