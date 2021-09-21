@@ -53,26 +53,21 @@ st.title('GUI for Vision intelligence research✨')
 st.write('원하는 이미지를 대상으로 다양한 실험을 편리하게 해볼 수 있습니다.')
 
 uploaded_files = st.file_uploader('Please upload an image', type=['jpg', 'jpeg', 'png'], accept_multiple_files=True)
+uploaded_files_list = list()
+
 for uploaded_file in uploaded_files:
-    col1, col2 = st.columns(2)
-    image = Image.open(uploaded_file)
-    with col1:
-        st.image(image)
-
-    with col2:
-        st.image(image)
-
+    log: str = f"id:{uploaded_file.id}, name:{uploaded_file.name}"
+    st.write(log)
+    uploaded_files_list.append(log)
+    original_image = Image.open(uploaded_file)
+    st.image(original_image)
 
 # sidebar
 with st.sidebar:
-    st.info(
-        "🎈 **NEW:** Add your own code template to this site! [Guide](https://github.com/jrieke/traingenerator#adding-new-templates)"
-    )
+    st.info("🎈 **NEW:** Add your own code template to this site! [Guide](https://github.com/jrieke/traingenerator#adding-new-templates)")
 
     st.write("## Task")
-    task = st.selectbox(
-        "Which problem do you want to solve?", list(task_dict.keys())
-    )
+    task = st.selectbox("Which problem do you want to solve?", list(task_dict.keys()))
 
     st.write("## Model")
     model = st.selectbox(
@@ -80,9 +75,15 @@ with st.sidebar:
     )
 
     st.write("## Dataset")
-    dataset = st.selectbox(
-        "Which data do you want to use?", list(task_dict[task][model].keys())
-    )
+    dataset = st.selectbox("Which data do you want to use?", list(task_dict[task][model].keys()))
+
+    if task == "Style Transfer":
+        st.header("Parameters")
+        with st.form(key="parameters"):
+            content_image = st.selectbox("Which images is content?", uploaded_files_list)
+            style_image = st.selectbox("Which images is style?", uploaded_files_list)
+            alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
+            parameters_submitted = st.form_submit_button("Submit")
 
     st.header("Layout configuration")
     with st.form(key="grid_reset"):
