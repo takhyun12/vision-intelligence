@@ -51,20 +51,7 @@ st.title('GUI for Vision intelligence research✨')
 &nbsp[![Gmail](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:takhyun12@gmail.com)](mailto:takhyun12@gmail.com)
 """
 
-# body => 객체화
-st.write('원하는 이미지를 대상으로 다양한 실험을 편리하게 해볼 수 있습니다.')
-
-uploaded_files = st.file_uploader('Please upload an image', type=['jpg', 'jpeg', 'png'], accept_multiple_files=True)
-
-for uploaded_file in uploaded_files:
-    log = f"id:{uploaded_file.id}, name:{uploaded_file.name}"
-    st.write(log)
-    original_image = Image.open(uploaded_file)
-    st.image(original_image)
-
 body_form = st.form("body_form")
-body_submitted = body_form.form_submit_button("Save")
-
 
 # sidebar => 객체화
 with st.sidebar:
@@ -83,26 +70,29 @@ with st.sidebar:
 
     if task == "Style Transfer":
         st.header("Parameters")
-        with st.form(key="parameters"):
-            content_image = st.selectbox("Which images is content?", uploaded_files)
-            style_image = st.selectbox("Which images is style?", uploaded_files)
-            alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
-            parameters_submitted = st.form_submit_button("Submit")
-            if parameters_submitted:
-                if (content_image is not None) and (style_image is not None):
-                    body_form.write('result image')
-                    original_image = Image.open(content_image)
-                    original_image = original_image.convert('L')
-                    body_form.image(original_image)
+
+        content_image_path = st.file_uploader('Which images is content?', type=['jpg', 'jpeg', 'png'])
+        if content_image_path:
+            content_image = Image.open(content_image_path)
+            body_form.image(content_image)
+
+        style_image_path = st.file_uploader('Which images is style?', type=['jpg', 'jpeg', 'png'])
+        if style_image_path:
+            style_image = Image.open(style_image_path)
+            body_form.image(style_image)
+
+        alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
+
+        if content_image_path and style_image_path:
+            st.info(content_image_path)
+            result_image = Image.open(content_image_path)
+            result_image = result_image.convert('L')
+            body_form.image(result_image)
 
     st.header("Layout configuration")
-    with st.form(key="grid_reset"):
-        n_photos = st.slider("Number of images:", min_value=1, max_value=4, value=1)
-        n_cols = st.number_input("Number of columns", min_value=1, max_value=4, value=1)
-        submitted = st.form_submit_button("Submit")
-        if submitted:
-            st.success(n_photos)
-            st.write("slider", n_photos, "checkbox", n_cols)
+    n_photos = st.slider("Number of images:", min_value=1, max_value=4, value=1)
+    n_cols = st.number_input("Number of columns", min_value=1, max_value=4, value=1)
+
 
     st.write("## Training")
     gpu_check = st.checkbox('Use GPU if available')
@@ -116,3 +106,7 @@ with st.sidebar:
     st.error(
         "Found a bug? [Report it](https://github.com/jrieke/traingenerator/issues) 🐛"
     )
+
+
+# body => 객체화
+body_submitted = body_form.form_submit_button("Save")
