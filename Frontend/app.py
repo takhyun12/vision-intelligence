@@ -1,7 +1,11 @@
 __version__ = '1.0.0'
 
+import cv2
+import numpy as np
 import streamlit as st
+from streamlit_cropper import st_cropper
 from PIL import Image, ImageOps
+from models.adain import AdaIN_v1
 
 # configuration
 task_dict = {
@@ -50,10 +54,10 @@ st.markdown("<br>", unsafe_allow_html=True)
 # header
 st.image(MAGE_EMOJI_URL, width=80)
 st.title('GUI for Vision intelligence research✨')
-"""
-[![Github](GIT_EMOJI_URL)](https://github.com/takhyun12?tab=repositories)
-&nbsp[![Linkedin](LINKEDIN_EMOJI_URL)](https://www.linkedin.com/in/tackhyun-jung-a248941a8)
-&nbsp[![Gmail](GMAIL_EMOJI_URL)](mailto:takhyun12@gmail.com)
+f"""
+[![Github]({GIT_EMOJI_URL})](https://github.com/takhyun12?tab=repositories)
+&nbsp[![Linkedin]({LINKEDIN_EMOJI_URL})](https://www.linkedin.com/in/tackhyun-jung-a248941a8)
+&nbsp[![Gmail]({GMAIL_EMOJI_URL})](mailto:takhyun12@gmail.com)
 """
 
 body_form = st.form("body_form")
@@ -77,28 +81,94 @@ with st.sidebar:
     if task == "Style Transfer":
         st.header("Parameters")
 
+        # content image
         content_image_path = st.file_uploader('Which images is content?', type=['jpg', 'jpeg', 'png'])
+
+        content_aspect = st.sidebar.radio(label="Content Aspect Ratio", options=["1:1", "16:9", "4:3", "2:3", "Free"])
+        aspect_dict = {"1:1": (1, 1),
+                       "16:9": (16, 9),
+                       "4:3": (4, 3),
+                       "2:3": (2, 3),
+                       "Free": None}
+        content_aspect_ratio = aspect_dict[content_aspect]
+
+        content_degree = st.sidebar.slider('Content rotate', -45, 45, 0, 1)
+
+        body_form.header("Selected Images")
+        content_column, style_column = body_form.columns(2)
         if content_image_path:
-            content_image = Image.open(content_image_path)
-            body_form.image(content_image)
+            file_bytes = np.asarray(bytearray(content_image_path.read()), dtype=np.uint8)
+            content_image = cv2.imdecode(file_bytes, 1)
+
+            (h, w) = content_image.shape[:2]
+            (cX, cY) = (w / 2, h / 2)
+
+            M = cv2.getRotationMatrix2D((cX, cY), content_degree, 1.0)
+            rotated_content_image = cv2.warpAffine(content_image, M, (w, h))
+
+            color_coverted = cv2.cvtColor(rotated_content_image, cv2.COLOR_BGR2RGB)
+            content_image = Image.fromarray(color_coverted)
+
+            with body_form:
+                cropped_content_image = st_cropper(content_image,
+                                         realtime_update=True,
+                                         aspect_ratio=content_aspect_ratio)
+
+                with content_column:
+                    st.write("content image thumbnail")
+                    st.image(cropped_content_image, width=256)
+
+        st.markdown("---")
 
         style_image_path = st.file_uploader('Which images is style?', type=['jpg', 'jpeg', 'png'])
+
+        style_aspect = st.sidebar.radio(label="Style Aspect Ratio", options=["1:1", "16:9", "4:3", "2:3", "Free"])
+        aspect_dict = {"1:1": (1, 1),
+                       "16:9": (16, 9),
+                       "4:3": (4, 3),
+                       "2:3": (2, 3),
+                       "Free": None}
+        style_aspect_ratio = aspect_dict[style_aspect]
+
+        style_degree = st.sidebar.slider('Style rotate', -45, 45, 0, 1)
+
         if style_image_path:
-            style_image = Image.open(style_image_path)
-            body_form.image(style_image)
+            file_bytes = np.asarray(bytearray(style_image_path.read()), dtype=np.uint8)
+            style_image = cv2.imdecode(file_bytes, 1)
+
+            (h, w) = style_image.shape[:2]
+            (cX, cY) = (w / 2, h / 2)
+
+            M = cv2.getRotationMatrix2D((cX, cY), style_degree, 1.0)
+            rotated_style_image = cv2.warpAffine(style_image, M, (w, h))
+
+            color_coverted = cv2.cvtColor(rotated_style_image, cv2.COLOR_BGR2RGB)
+            style_image = Image.fromarray(color_coverted)
+
+            with body_form:
+                cropped_style_image = st_cropper(style_image,
+                                         realtime_update=True,
+                                         aspect_ratio=style_aspect_ratio)
+
+                with style_column:
+                    st.write("style image thumbnail")
+                    st.image(cropped_style_image, width=256)
+
+        st.markdown("---")
 
         alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
 
         if content_image_path and style_image_path:
-            st.info(content_image_path)
-            result_image = Image.open(content_image_path)
-            result_image = result_image.convert('L')
+            assert (0.0 <= alpha <= 1.0)
+
+            adain = AdaIN_v1(content_image=content_image_path, style_image=style_image_path, alpha=alpha)
+            result_image_path = adain.style_transfer()
+            result_image = Image.open(result_image_path)
             body_form.image(result_image)
 
     st.header("Layout configuration")
     n_photos = st.slider("Number of images:", min_value=1, max_value=4, value=1)
     n_cols = st.number_input("Number of columns", min_value=1, max_value=4, value=1)
-
 
     st.write("## Training")
     gpu_check = st.checkbox('Use GPU if available')
@@ -112,3 +182,5 @@ with st.sidebar:
     st.error(
         "Found a bug? [Report it](https://github.com/jrieke/traingenerator/issues) 🐛"
     )
+
+# ===========================
