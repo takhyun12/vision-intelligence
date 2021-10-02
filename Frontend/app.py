@@ -182,5 +182,3 @@ with st.sidebar:
     st.error(
         "Found a bug? [Report it](https://github.com/jrieke/traingenerator/issues) 🐛"
     )
-
-# ===========================
