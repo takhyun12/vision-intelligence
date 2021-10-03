@@ -61,7 +61,7 @@ f"""
 """
 
 body_form = st.form("body_form")
-body_submitted = body_form.form_submit_button("Save")
+body_submitted = body_form.form_submit_button("Submit")
 
 # sidebar => 객체화
 with st.sidebar:
@@ -81,6 +81,10 @@ with st.sidebar:
     if task == "Style Transfer":
         st.header("Parameters")
 
+        # alpha value
+        alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.8, step=0.1)
+        assert (0.0 <= alpha <= 1.0)
+
         # content image
         content_image_path = st.file_uploader('Which images is content?', type=['jpg', 'jpeg', 'png'])
 
@@ -92,9 +96,8 @@ with st.sidebar:
                        "Free": None}
         content_aspect_ratio = aspect_dict[content_aspect]
 
-        content_degree = st.sidebar.slider('Content rotate', -45, 45, 0, 1)
+        content_degree = st.sidebar.slider('Content image rotate', -45, 45, 0, 1)
 
-        body_form.header("Selected Images")
         content_column, style_column = body_form.columns(2)
         if content_image_path:
             file_bytes = np.asarray(bytearray(content_image_path.read()), dtype=np.uint8)
@@ -115,8 +118,7 @@ with st.sidebar:
                                          aspect_ratio=content_aspect_ratio)
 
                 with content_column:
-                    st.write("content image thumbnail")
-                    st.image(cropped_content_image, width=256)
+                    st.image(cropped_content_image, width=256, caption="content image thumbnail")
 
         st.markdown("---")
 
@@ -130,7 +132,7 @@ with st.sidebar:
                        "Free": None}
         style_aspect_ratio = aspect_dict[style_aspect]
 
-        style_degree = st.sidebar.slider('Style rotate', -45, 45, 0, 1)
+        style_degree = st.sidebar.slider('Style image rotate', -45, 45, 0, 1)
 
         if style_image_path:
             file_bytes = np.asarray(bytearray(style_image_path.read()), dtype=np.uint8)
@@ -147,24 +149,17 @@ with st.sidebar:
 
             with body_form:
                 cropped_style_image = st_cropper(style_image,
-                                         realtime_update=True,
-                                         aspect_ratio=style_aspect_ratio)
+                                                 realtime_update=True,
+                                                 aspect_ratio=style_aspect_ratio)
 
                 with style_column:
-                    st.write("style image thumbnail")
-                    st.image(cropped_style_image, width=256)
-
-        st.markdown("---")
-
-        alpha = st.slider("Value of alpha:", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
+                    st.image(cropped_style_image, width=256, caption="style image thumbnail")
 
         if content_image_path and style_image_path:
-            assert (0.0 <= alpha <= 1.0)
-
-            adain = AdaIN_v1(content_image=content_image_path, style_image=style_image_path, alpha=alpha)
+            adain = AdaIN_v1(content_image=cropped_content_image, style_image=cropped_style_image, alpha=alpha)
             result_image_path = adain.style_transfer()
             result_image = Image.open(result_image_path)
-            body_form.image(result_image)
+            body_form.image(result_image, caption="Result image")
 
     st.header("Layout configuration")
     n_photos = st.slider("Number of images:", min_value=1, max_value=4, value=1)
